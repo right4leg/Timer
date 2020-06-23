@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mTW-sQ-ay3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="abi-4g-WfR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="EpL-Rg-HX8"/>
                             <constraint firstItem="8Ns-WB-EW3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K7E-3n-AzE"/>
@@ -68,7 +68,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="TimeLabel" destination="abi-4g-WfR" id="hLf-AK-0wY"/>
-                        <segue destination="hWI-Ya-5yL" kind="show" id="sKd-6V-eiz"/>
+                        <segue destination="hWI-Ya-5yL" kind="show" identifier="goSetting" id="sKd-6V-eiz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -95,7 +95,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FtB-By-Lrz" firstAttribute="centerY" secondItem="0eA-3k-P15" secondAttribute="centerY" id="6Ka-WE-mmu"/>
                             <constraint firstItem="IiB-Tb-BXc" firstAttribute="trailing" secondItem="U6N-cQ-Hfi" secondAttribute="trailing" id="6P5-6P-yrh"/>
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLz-Ov-Kxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2675" y="97"/>
+            <point key="canvasLocation" x="2716" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PaJ-Dg-RWm">
