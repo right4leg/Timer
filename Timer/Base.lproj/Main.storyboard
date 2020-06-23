@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,127 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abi-4g-WfR">
+                                <rect key="frame" x="186" y="287.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ns-WB-EW3">
+                                <rect key="frame" x="85.5" y="418" width="83" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFW-iL-bER"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttF-Gn-obw">
+                                <rect key="frame" x="247" y="418" width="80" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="Stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ddp-cM-cc5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vr5-8o-CPB">
+                                <rect key="frame" x="158" y="518" width="98" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="Reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZY-Zg-WzM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="abi-4g-WfR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="EpL-Rg-HX8"/>
+                            <constraint firstItem="8Ns-WB-EW3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="K7E-3n-AzE"/>
+                            <constraint firstItem="Vr5-8o-CPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L2N-vG-d6X"/>
+                            <constraint firstItem="abi-4g-WfR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ljl-MJ-Pcl"/>
+                            <constraint firstItem="Vr5-8o-CPB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="PNz-Ji-0OS"/>
+                            <constraint firstItem="ttF-Gn-obw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="aGX-bL-Vad"/>
+                            <constraint firstItem="8Ns-WB-EW3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="i16-DJ-888"/>
+                            <constraint firstItem="ttF-Gn-obw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="okv-g4-rKp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HCm-me-tHw">
+                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="eTa-uh-8gb">
+                            <connections>
+                                <action selector="Setting:" destination="BYZ-38-t0r" id="1sq-3V-rF2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TimeLabel" destination="abi-4g-WfR" id="hLf-AK-0wY"/>
+                        <segue destination="hWI-Ya-5yL" kind="show" id="sKd-6V-eiz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="97.767857142857139"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="fhQ-Jg-QXz">
+            <objects>
+                <viewController id="hWI-Ya-5yL" customClass="SettingViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0eA-3k-P15">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiB-Tb-BXc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtB-By-Lrz">
+                                <rect key="frame" x="162" y="418" width="90" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="Enter:" destination="hWI-Ya-5yL" eventType="touchUpInside" id="6ii-qz-NS4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FtB-By-Lrz" firstAttribute="centerY" secondItem="0eA-3k-P15" secondAttribute="centerY" id="6Ka-WE-mmu"/>
+                            <constraint firstItem="IiB-Tb-BXc" firstAttribute="trailing" secondItem="U6N-cQ-Hfi" secondAttribute="trailing" id="6P5-6P-yrh"/>
+                            <constraint firstItem="IiB-Tb-BXc" firstAttribute="top" secondItem="U6N-cQ-Hfi" secondAttribute="top" id="EPy-tu-8lO"/>
+                            <constraint firstItem="FtB-By-Lrz" firstAttribute="centerX" secondItem="0eA-3k-P15" secondAttribute="centerX" id="LO6-RM-Zkx"/>
+                            <constraint firstItem="IiB-Tb-BXc" firstAttribute="leading" secondItem="U6N-cQ-Hfi" secondAttribute="leading" id="bJw-EY-uAQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U6N-cQ-Hfi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iqX-lr-adY"/>
+                    <connections>
+                        <outlet property="Timesetting" destination="IiB-Tb-BXc" id="maY-iN-qiK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLz-Ov-Kxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2675" y="97"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PaJ-Dg-RWm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mTW-sQ-ay3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DZ0-90-3fH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XEv-Vo-rAQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3vl-Zy-451" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
         </scene>
     </scenes>
 </document>

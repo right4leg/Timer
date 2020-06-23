@@ -14,7 +14,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    @IBOutlet weak var TimeLabel: UILabel!
+    
+    @IBAction func Setting(_ sender: Any) {
+    }
+    
+    @IBAction func Start(_ sender: Any) {
+    }
+    
+    @IBAction func Stop(_ sender: Any) {
+    }
+    
+    @IBAction func Reset(_ sender: Any) {
+    }
+    
 }
 
