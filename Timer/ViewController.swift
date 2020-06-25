@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     //カウント（経過時間）の変数を作成
     var count = 0
     //設定値を扱うキーを設定
-    let settingKey = "timer_value"
+    let settingKey = "timer_Value"
     
 
     override func viewDidLoad() {
